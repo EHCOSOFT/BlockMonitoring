@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>모니터링 시스템</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="container">
+                <div class="top">
+                    <p>2024-06-18 PM 10:53</p>
+                    <p>102653 홍길동</p>
+                </div>
+                <section class="main-content">
+                    <h1>1. 작업정보</h1>
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="input-wrap">
+                                <div class="select-group">
+                                    <label>도크/안벽 정보 선택(필수)</label>
+                                    <select name="" id="">
+                                        <option value="">정보를 선택해주세요.</option>
+                                        <option value="">8안벽 G/C</option>
+                                        <option value="">6안벽</option>
+                                        <option value="">신한내</option>
+                                        <option value="">조명타워</option>
+                                        <option value="">2도크 G/C</option>
+                                    </select>
+                                    <small>!블록명을 입력해주세요</small>
+                                </div>
+                                <div class="input-group">
+                                    <label for="">프로젝트명(선택)</label>
+                                    <input type="text" placeholder="프로젝트명을 입력해주세요.">
+                                </div>
+                                <div class="input-group">
+                                    <label for="">블록명(필수)</label>
+                                    <input type="text" placeholder="블록명을 입력해주세요.">
+                                    <small>!블록명을 입력해주세요</small>
+                                </div>
+                                <button type="button" class="btn btn-md btn-primary">확인</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <ul class="weather-info">
+                                <li>
+                                    <dl>
+                                        <dt>2일전</dt>
+                                        <dd>60.0km</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>1일전</dt>
+                                        <dd>60.0km</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>당일</dt>
+                                        <dd>60.0km</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

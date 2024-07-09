@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>모니터링 시스템</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="container">
+                <div class="top">
+                    <p>2024-06-18 PM 10:53</p>
+                    <p>102653 홍길동</p>
+                </div>
+                <section class="main-content">
+                    <h1>2. 블록형상</h1>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="radio-wrap">
+                                    <h3>블록형상</h3>
+                                    <div class="radio-area">
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio01" name="block">
+                                            <label for="radio01">
+                                                <img src="img/ico/i-square.png" alt="사각형">
+                                            </label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio02" name="block">
+                                            <label for="radio02">
+                                                <img src="img/ico/i-trg.png" alt="삼각형">
+                                            </label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio03" name="block">
+                                            <label for="radio03">
+                                                <img src="img/ico/i-polygon.png" alt="다각형">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="select-group">
+                                    <label>센서위치<a href="#">가이드</a></label>
+                                    <select name="" id="">
+                                        <option value="">센서위치를 선택해주세요.</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="input-group">
+                                    <label for="">블록 무게(ton)</label>
+                                    <input type="text" placeholder="무게를 입력해주세요.">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="input-group">
+                                    <label for="">블록 높이(mm)</label>
+                                    <input type="text" placeholder="높이를 입력해주세요.">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="input-group">
+                                    <label for="">센서 설치 높이(mm)</label>
+                                    <input type="text" placeholder="높이를 입력해주세요.">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-md btn-primary">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

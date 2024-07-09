@@ -1,0 +1,238 @@
+@charset "utf-8";
+@import url(common.css);
+
+
+/*
+ * File       : styles.css
+ * Date       : 2024. 07. 07.
+ *
+ * SUMMARY:
+ * 01) 로그인
+ * 02) 메인화면
+ */
+
+/* **************************************** *
+ * 로그인
+ * **************************************** */
+.login-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: var(--app-height);
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+}
+
+.login-wrap .text-logo {
+    height: 54px;
+}
+
+.login-wrap .sumsung-logo {
+    bottom: 2rem;
+    height: 1.625rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.login-wrap .card {
+    max-width: 34.25rem;
+}
+
+.login-wrap button {
+    font-weight: 700;
+    font-size: var(--text-lg);
+}
+
+@media (min-width:768px) {
+    .login-wrap {
+        gap: 2.75rem;
+    }
+
+    .login-wrap .text-logo {
+        height: 6.25rem;
+    }
+
+    .login-wrap .sumsung-logo {
+        bottom: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (min-width:992px) {
+    .login-wrap {
+        gap: 2.75rem;
+    }
+
+    .login-wrap .text-logo {
+        height: 5.5rem;
+    }
+
+    .login-wrap .sumsung-logo {
+        bottom: 3.75rem;
+        height: 2.5rem;
+    }
+}
+
+/* **************************************** *
+ * 메인화면
+ * **************************************** */
+.main-content {
+    margin: 20px 0 0 0;
+}
+
+.main-content .row {
+    --bs-gutter-y: 0.75rem;
+}
+
+.top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top p {
+    color: var(--black);
+    font-size: var(--text-lg);
+    font-weight: 400;
+}
+
+@media (min-width:768px) {
+    .top p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:992px) {
+    .top p {
+        font-size: 1.25rem;
+    }
+}
+
+.main-item {
+    align-items: center;
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 28px;
+}
+
+.main-item.normal {
+    border-color: var(--primary);
+}
+
+.main-item.error {
+    border-color: var(--red);
+}
+
+.main-item h2 {
+    align-items: center;
+    color: var(--black);
+    display: flex;
+}
+
+@media (min-width:768px) {
+    .main-content {
+        margin: 32px 0 0 0;
+    }
+
+    .main-item {
+        border: 4px solid var(--white);
+        padding: 32px 48px;
+    }
+}
+
+/* **************************************** *
+ * 작업정보구성도
+ * **************************************** */
+.main-content h1 {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.main-content button {
+    font-size: 1rem;
+}
+
+.weather-info {
+    display: flex;
+}
+
+.weather-info li {
+    width: calc(100% / 3);
+}
+
+.weather-info dl {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.weather-info dt {
+    color: var(--black-600);
+    font-size: 1rem;
+}
+
+.weather-info dd {
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+    .main-content h1 {
+        margin: 0 0 32px 0;
+    }
+
+    .main-content button {
+        font-size: 1.5rem;
+    }
+
+    .weather-info dl {
+        gap: 1rem;
+    }
+
+    .weather-info dt {
+        font-size: 1.5rem;
+    }
+
+    .weather-info dd {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width:992px) {
+    .main-content button {
+        font-size: 1.25rem;
+    }
+
+    .weather-info dl {
+        gap: .75rem;
+    }
+
+    .weather-info dt {
+        font-size: 1.25rem;
+    }
+
+    .weather-info dd {
+        font-size: 1.75rem;
+    }
+}
+
+/* **************************************** *
+ * 블록형상구성도
+ * **************************************** */
+.card .row {
+    --bs-gutter-y: 24px;
+}
+
+@media (min-width:768px) {
+    .card .row {
+        --bs-gutter-y: 32px;
+    }
+}
