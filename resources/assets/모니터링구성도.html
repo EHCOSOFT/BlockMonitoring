@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>모니터링 시스템</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <img src="img/sumsung-logo-w.png" alt="삼성중공업">
+                </a>
+                <button type="button">
+                    <i class="ico i-set"></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="map">
+                <!-- 지도 넣으실때 map background:none; 처리 후 넣어주세요 -->
+                <div class="map-area">
+                    <ul class="list">
+                        <li class="pc red">블록</li>
+                        <li>
+                            <dl>
+                                <dt>속도</dt>
+                                <dd>0.1m/s</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>방향</dt>
+                                <dd><i class="ico i-direction"></i></dd>
+                                <!-- icon이 방향에 따라서 rotate 합니다. -->
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>풍속</dt>
+                                <dd>0.1m/s</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>풍향</dt>
+                                <dd>0.1m/s</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>ROLL</dt>
+                                <dd>1deg</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>PITCH</dt>
+                                <dd>1deg</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="day">
+                        <div class="day-header">
+                            <h5>2024년 06월 24일 17:26</h5>
+                            <button type="button"><i class="ico i-chevron-down"></i></button>
+                        </div>
+                        <div class="day-body">
+                            <div class="card">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>당일</dt>
+                                            <dd>60.0km</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>프로젝트명</dt>
+                                            <dd>Non</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>야드/안벽</dt>
+                                            <dd>8안벽 G/C</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn open-modal" data-modal-id="blockStopModal"><i class="ico i-shapes"></i>종료</button>
+                        </div>
+                    </div>
+                    <ul class="list bottom">
+                        <li class="pc blue">크레인</li>
+                        <li>
+                            <dl>
+                                <dt>속도</dt>
+                                <dd>0.1m/s</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>방향</dt>
+                                <dd><i class="ico i-direction"></i></dd>
+                                <!-- icon이 방향에 따라서 rotate 합니다. -->
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>풍속</dt>
+                                <dd>0.1m/s</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>풍향</dt>
+                                <dd>0.1m/s</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>ROLL</dt>
+                                <dd>1deg</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>PITCH</dt>
+                                <dd>1deg</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <i class="ico i-compass"></i>
+                <ul class="zoom">
+                    <li>
+                        <button type="button">
+                            <i class="ico i-plus"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <i class="ico i-minus"></i>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- S : blockStopModal :: 블록/크레인 종료-->
+    <div id="blockStopModal" class="modal-wrap block-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">블록/크레인</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-wrap">
+                        <div class="select-group">
+                            <label for="">블록 데이터</label>
+                            <select name="" id="">
+                                <option value="">항목을 선택해주세요.</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <label for="">크레인 데이터</label>
+                            <select name="" id="">
+                                <option value="">항목을 선택해주세요.</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-red btn-md">종료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : blockStopModal -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

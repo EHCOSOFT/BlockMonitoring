@@ -34,5 +34,13 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    // map 날짜 이벤트
+    $('.day-header button').click(function () {
+        var $day = $(this).closest('.day');
+        $day.find('.day-body').slideToggle(300, function () {
+            $day.toggleClass('active', $(this).is(':visible'));
+        });
+    });
+
 });
 
