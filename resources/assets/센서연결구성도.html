@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>모니터링 시스템</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="container">
+                <div class="top">
+                    <p>2024-06-18 PM 10:53</p>
+                    <p>102653 홍길동</p>
+                </div>
+                <section class="main-content">
+                    <h1>3. 센서연결</h1>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <dl class="dl-group">
+                                    <dt>프로젝트명</dt>
+                                    <dd>프로젝트이름</dd>
+                                </dl>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <dl class="dl-group">
+                                    <dt>블록명</dt>
+                                    <dd>블록명블록명블록명</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-sensor">
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>GPS연결<span class="switch-circle on"></span></h3>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round">
+                                            <span class="switch-text on">ON</span>
+                                            <span class="switch-text off">OFF</span>
+                                        </span></label>
+                                </div>
+                                <div class="card-body">
+                                    <p>$GPGGA,114455.532,3735.0079,N,12701.6446,E,1,03,7.9,48.8,M,19.6,M,0.0,0000*48</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>IMU연결<span class="switch-circle off"></span></h3>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round">
+                                            <span class="switch-text on">ON</span>
+                                            <span class="switch-text off">OFF</span>
+                                        </span></label>
+                                </div>
+                                <div class="card-body">
+                                    <p>2023-06-04 12:34:56.789, 0.02, -0.01, 9.81, 0.001, -0.002, 0.0005, 0.3, 0.1, 0.4
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>풍향풍속연결<span class="switch-circle off"></span></h3>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round">
+                                            <span class="switch-text on">ON</span>
+                                            <span class="switch-text off">OFF</span>
+                                        </span></label>
+                                </div>
+                                <div class="card-body">
+                                    <p>2024-06-04 14:25:30, 270, 5.5<br>
+                                        2024-06-04 14:25:32, 265, 5.3</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>서버연결<span class="switch-circle on"></span></h3>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round">
+                                            <span class="switch-text on">ON</span>
+                                            <span class="switch-text off">OFF</span>
+                                        </span></label>
+                                </div>
+                                <div class="card-body">
+                                    <p>2024-06-04 14:31:00, Server1, ALIVE<br>
+                                        2024-06-04 14:32:00, Server2, DOWN</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>통신연결<span class="switch-circle off"></span></h3>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round">
+                                            <span class="switch-text on">ON</span>
+                                            <span class="switch-text off">OFF</span>
+                                        </span></label>
+                                </div>
+                                <div class="card-body">
+                                    <p>2024-06-04 14:31:00, Client1, CONNECTED<br>
+                                        2024-06-04 14:32:00, Client1, DISCONNECTED</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-md btn-primary">장비 RESET</button>
+                        </div>
+                    </div>
+                    <div class="pc-sensor">
+
+                        <div class="card">
+                            <table class="table-style">
+                                <colgroup>
+                                    <col style="width: 200px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 160px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>연결확인</th>
+                                        <th>신호 센텐스 확인</th>
+                                        <th>전원</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3>GPS연결<span class="switch-circle on"></span></h3>
+                                        </td>
+                                        <td class="text-left">
+                                            $GPGGA,114455.532,3735.0079,N,12701.6446,E,1,03,7.9,48.8,M,19.6,M,0.0,0000*48
+                                        </td>
+                                        <td>
+                                            <div class="switch-area">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round">
+                                                        <span class="switch-text on">ON</span>
+                                                        <span class="switch-text off">OFF</span>
+                                                    </span></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>IMU연결<span class="switch-circle on"></span></h3>
+                                        </td>
+                                        <td class="text-left">
+                                            2023-06-04 12:34:56.789, 0.02, -0.01, 9.81, 0.001, -0.002, 0.0005, 0.3,
+                                            0.1,
+                                            0.4
+                                        </td>
+                                        <td>
+                                            <div class="switch-area">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round">
+                                                        <span class="switch-text on">ON</span>
+                                                        <span class="switch-text off">OFF</span>
+                                                    </span></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>풍향풍속연결<span class="switch-circle on"></span></h3>
+                                        </td>
+                                        <td class="text-left">
+                                            2024-06-04 14:25:30, 270, 5.5<br>
+                                            2024-06-04 14:25:32, 265, 5.3
+                                        </td>
+                                        <td>
+                                            <div class="switch-area">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round">
+                                                        <span class="switch-text on">ON</span>
+                                                        <span class="switch-text off">OFF</span>
+                                                    </span></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>서버연결<span class="switch-circle on"></span></h3>
+                                        </td>
+                                        <td class="text-left">
+                                            2024-06-04 14:25:30, 270, 5.5<br>
+                                            2024-06-04 14:25:32, 265, 5.3
+                                        </td>
+                                        <td>
+                                            <div class="switch-area">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round">
+                                                        <span class="switch-text on">ON</span>
+                                                        <span class="switch-text off">OFF</span>
+                                                    </span></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>통신연결<span class="switch-circle off"></span></h3>
+                                        </td>
+                                        <td class="text-left">
+                                            2024-06-04 14:31:00, Client1, CONNECTED<br>
+                                            2024-06-04 14:32:00, Client1, DISCONNECTED
+                                        </td>
+                                        <td>
+                                            <div class="switch-area">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round">
+                                                        <span class="switch-text on">ON</span>
+                                                        <span class="switch-text off">OFF</span>
+                                                    </span></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-md btn-primary">장비 RESET</button>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

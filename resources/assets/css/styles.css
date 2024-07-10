@@ -236,3 +236,126 @@
         --bs-gutter-y: 32px;
     }
 }
+
+/* **************************************** *
+ * 센서연결구성도
+ * **************************************** */
+.dl-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dl-group dt {
+    color: var(--black-600);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dl-group dd {
+    color: var(--black-950);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.m-sensor {
+    margin: 20px 0 0 0;
+}
+
+.pc-sensor {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .dl-group {
+        gap: 0px;
+    }
+
+    .dl-group dt {
+        font-size: 20px;
+    }
+
+    .dl-group dd {
+        font-size: 24px;
+    }
+
+    .m-sensor {
+        display: none;
+    }
+
+    .pc-sensor {
+        display: block;
+        margin: 20px 0 0 0;
+    }
+}
+
+.switch-circle {
+    border-radius: 100px;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+.switch-circle.on {
+    background: #00D6AD;
+}
+
+.switch-circle.off {
+    background: var(--red);
+}
+
+@media (min-width:768px) {
+    .switch-circle {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (min-width:992px) {
+    .switch-circle {
+        height: 16px;
+        width: 16px;
+    }
+}
+.table-style {
+    border-collapse: collapse;
+}
+
+.table-style thead {
+    border-top: 1px solid var(--black-500);
+    border-bottom: 1px solid var(--black-500);
+}
+
+.table-style th {
+    color: var(--black-950);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 0;
+}
+
+.table-style td {
+    border-bottom: 1px solid var(--black-300);
+    color: var(--black-700);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 0;
+    text-align: center;
+    word-break: break-word;
+}
+
+.table-style td.text-left {
+    text-align: left;
+}
+
+.table-style td h3 {
+    align-items: center;
+    color: var(--black-950);
+    font-size: 20px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.pc-sensor button {
+    margin: 28px 0 0 0;
+}

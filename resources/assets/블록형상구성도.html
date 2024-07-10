@@ -51,7 +51,8 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="select-group">
-                                    <label>센서위치<a href="#">가이드</a></label>
+                                    <label>센서위치<a href="javascript:void(0);" class="open-modal"
+                                            data-modal-id="sensorLocationModal">가이드</a></label>
                                     <select name="" id="">
                                         <option value="">센서위치를 선택해주세요.</option>
                                         <option value="">1</option>
@@ -90,6 +91,26 @@
         </main>
 
     </div>
+
+    <!-- S : sensorLocationModal :: 센서위치 안내-->
+    <div id="sensorLocationModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">센서위치 안내</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/sl-01.png" alt="사각형 센서위치">
+                    <img src="img/sl-02.png" alt="삼각형 센서위치">
+                    <img src="img/sl-03.png" alt="다각형 센서위치">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : sensorLocationModal -->
 
     <script src="lib/jquery.min.js"></script>
     <script src="js/common.js"></script>
