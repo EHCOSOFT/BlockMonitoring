@@ -36,7 +36,7 @@
                         <div class="card">
                             <div class="row">
                                 <div class="col-12 col-md-12 col-lg-6">
-                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                    <canvas id="dataChart" width="400" height="200"></canvas>
                                 </div>
                                 <div class="col-12 col-md-12 col-lg-6">
                                     <div class="btn-wrap">
@@ -80,8 +80,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Step 2: Define the chart data and configuration
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, {
+        const ctx = document.getElementById('dataChart').getContext('2d');
+        const dataChart = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: ['2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
