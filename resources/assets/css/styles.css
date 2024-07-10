@@ -503,7 +503,7 @@
         height: 28px;
         width: 28px;
     }
-    
+
     .zoom .i-minus {
         background: url(../img/ico/i-minus.png);
         height: 28px;
@@ -561,6 +561,7 @@
         bottom: 32px;
     }
 }
+
 .map .day {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.80);
@@ -740,5 +741,51 @@
     .map-area {
         margin: 0 auto;
         max-width: 1000px;
+    }
+}
+
+/* **************************************** *
+ * 데이터확인 구성도
+ * **************************************** */
+.btn-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-group.vertical {
+    flex-direction: column;
+}
+
+.btn-group.vertical button {
+    padding: 14px 0;
+}
+.btn-group button {
+    font-size: 15px;
+    font-weight: 500;
+    flex: 1;
+    height: 50px;
+}
+
+@media (min-width:768px) {
+    .btn-group button {
+        font-size: 20px;
+        height: 58px;
+    }
+
+    .btn-group.vertical {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:768px) {
+    .btn-group button {
+        font-size: 16px;
+        height: 52px;
     }
 }

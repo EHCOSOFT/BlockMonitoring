@@ -570,7 +570,6 @@ h2 {
     align-items: center;
     display: flex;
     height: 60px;
-    justify-content: space-between;
     max-width: 1856px;
 }
 
@@ -583,10 +582,38 @@ h2 {
     height: 22px;
 }
 
+.header .right {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
 .header button {
     background: none;
     border: 0;
+    margin: 0 0 0 12px;
     padding: 0;
+}
+
+.header .i-battery {
+    align-items: center;
+    background: url(../img/ico/i-battery.png);
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    margin: 0 0 0 auto;
+    position: relative;
+    width: 36px;
+}
+
+.header .i-battery span {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: -3px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -602,9 +629,19 @@ h2 {
         height: 36px;
     }
 
+    .header button {
+        margin: 0 0 0 24px;
+    }
+
+    .header .i-battery {
+        height: 48px;
+        width: 48px;
+    }
+
+    .header .i-battery span {
+        font-size: 16px;
+    }
 }
-
-
 
 .wrap {
     display: flex;
@@ -670,6 +707,27 @@ main .container {
     font-size: 16px;
     font-weight: 600;
 }
+
+.btn-yellow {
+    background: #FFC702;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-outline-gray {
+    background: var(--white);
+    border: 1px solid var(--black-100);
+    color: var(--black-700);
+}
+
+.btn-outline-gray:focus,
+.btn-outline-gray:active {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--white);
+}
+
 @media (min-width:768px) {
     .btn-red {
         background: var(--red);
@@ -678,6 +736,7 @@ main .container {
         font-weight: 600;
     }
 }
+
 /* **************************************** *
  * icon
  * **************************************** */
@@ -1211,7 +1270,7 @@ input::placeholder {
     padding: 12px 16px;
 }
 
-.modal-footer .mk-btn-group {
+.modal-footer {
     justify-content: flex-end;
 }
 

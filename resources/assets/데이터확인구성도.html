@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>모니터링 시스템</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="container">
+                <div class="top">
+                    <p>2024-06-18 PM 10:53</p>
+                    <p>102653 홍길동</p>
+                </div>
+                <section class="main-content">
+                    <h1>5. 데이터 확인</h1>
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-12">
+                                    <dl class="dl-group">
+                                        <dt>프로젝트명</dt>
+                                        <dd>도크_프로젝트명_블록명_20240701.csv</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-6">
+                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-6">
+                                    <div class="btn-wrap">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-yellow">블록</button>
+                                            <button type="button" class="btn btn-red">크레인</button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-gray">속도</button>
+                                            <button type="button" class="btn btn-outline-gray">방향</button>
+                                            <button type="button" class="btn btn-outline-gray">풍속</button>
+                                            <button type="button" class="btn btn-outline-gray">풍향</button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-gray">ROLL</button>
+                                            <button type="button" class="btn btn-outline-gray">PITCH</button>
+                                            <button type="button" class="btn btn-outline-gray">이동거리</button>
+                                            <button type="button" class="btn btn-outline-gray">높이변화</button>
+                                        </div>
+                                        <div class="btn-group vertical">
+                                            <button type="button" class="btn btn-outline-gray">가져오기</button>
+                                            <button type="button" class="btn btn-outline-gray">내보내기</button>
+                                            <button type="button" class="btn btn-outline-gray">이메일 내보내기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </div>
+
+    </main>
+
+    </div>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Step 2: Define the chart data and configuration
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
+                datasets: [{
+                    label: 'Dataset 1',
+                    data: [65, 59, 80, 81, 56, 55, 40, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: '#1F78B4',
+                    tension: 0.4
+                },
+                {
+                    label: 'Dataset 2',
+                    data: [28, 48, 40, 19, 86, 27, 90, 48, 40, 19, 86, 27, 90],
+                    fill: false,
+                    borderColor: '#A6CEE3',
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
