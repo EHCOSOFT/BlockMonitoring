@@ -8,11 +8,11 @@ $(document).ready(function () {
                     <img src="img/sumsung-logo-w.png" alt="삼성중공업">
                 </a>
                 <div class="right">
-                    <button type="button">
+                    <button type="button" class="open-modal" data-modal-id="accountModal">
                         <i class="ico i-set"></i>
                     </button>
                 </div>
-            </div>
+            </div>    
         `
     };
 

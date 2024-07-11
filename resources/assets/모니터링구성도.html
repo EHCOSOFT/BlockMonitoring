@@ -19,7 +19,7 @@
                 </a>
                 <div class="right">
                     <i class="ico i-battery"><span>84</span></i>
-                    <button type="button">
+                    <button type="button" class="open-modal" data-modal-id="accountModal">
                         <i class="ico i-set"></i>
                     </button>
                 </div>
@@ -192,6 +192,54 @@
         </div>
     </div>
     <!-- E : blockStopModal -->
+
+    <!-- S : accountModal :: 계정생성-->
+    <div id="accountModal" class="modal-wrap account-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">계정생성</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <label for="">이름</label>
+                            <input type="text" placeholder="이름을 입력해주세요.">
+                        </div>
+                        <div class="input-group">
+                            <label for="">부서기입</label>
+                            <input type="text" placeholder="부서를 입력해주세요.">
+                        </div>
+                        <div class="input-group">
+                            <label for="">사원번호</label>
+                            <input type="number" placeholder="사원번호를 입력해주세요.">
+                        </div>
+                        <div class="input-group">
+                            <label for="">이메일</label>
+                            <input type="text" placeholder="이메일을 입력해주세요..">
+                        </div>
+                        <div class="input-group">
+                            <label for="">비밀번호</label>
+                            <input type="password" placeholder="비밀번호를 입력해주세요.">
+                        </div>
+                        <div class="input-group">
+                            <label for="">비밀번호 확인</label>
+                            <input type="password" placeholder="비밀번호를 재입력해주세요.">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-md">가입</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : accountModal -->
+
 
     <script src="lib/jquery.min.js"></script>
     <script src="js/common.js"></script>

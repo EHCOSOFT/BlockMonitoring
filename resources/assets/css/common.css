@@ -977,6 +977,7 @@ main .container {
 }
 
 .input-group {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -993,6 +994,7 @@ main .container {
     color: var(--black-900);
     font-size: var(--text-md);
     padding: 0.75rem 1rem;
+    width: 100%;
 }
 
 input::placeholder {
@@ -1262,16 +1264,59 @@ input::placeholder {
     font-size: 20px;
 }
 
+.modal-body {
+    overflow: scroll;
+    max-height: calc(100vh - 400px);
+    padding: 0 4px 0 0;
+}
+
+.modal-body::-webkit-scrollbar {
+    background: none;
+    width: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: var(--black-300);
+    border-radius: 100px;
+}
+
 .modal-body img {
     width: 100%;
 }
 
 .modal-footer {
-    padding: 12px 16px;
+    justify-content: flex-end;
 }
 
-.modal-footer {
-    justify-content: flex-end;
+.account-modal .modal-content {
+    min-width: 90%;
+}
+
+.account-modal button {
+    font-size: 16px;
+}
+
+@media (min-width:768px) {
+    .account-modal .modal-content {
+        min-width: 500px;
+    }
+
+    .account-modal .input-group label {
+        color: var(--black-900);
+        font-size: 20px !important;
+    }
+
+    .account-modal .input-group input {
+        border-radius: 8px;
+        color: var(--black-900);
+        font-size: 18px;
+        padding: 0.75rem 1rem;
+    }
+
+    .account-modal .modal-footer button {
+        font-size: 20px;
+        height: 3.25rem;
+    }
 }
 
 /* switch */
