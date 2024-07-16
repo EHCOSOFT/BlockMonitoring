@@ -8,11 +8,12 @@ $(document).ready(function () {
                     <img src="img/sumsung-logo-w.png" alt="삼성중공업">
                 </a>
                 <div class="right">
+                    <i class="ico i-battery"><span>84</span></i>
                     <button type="button" class="open-modal" data-modal-id="accountModal">
                         <i class="ico i-set"></i>
                     </button>
                 </div>
-            </div>    
+            </div>  
         `
     };
 
@@ -42,6 +43,18 @@ $(document).ready(function () {
         $day.find('.day-body').slideToggle(300, function () {
             $day.toggleClass('active', $(this).is(':visible'));
         });
+    });
+
+    $('.btn-yellow').click(function() {
+        $(this).toggleClass('active');
+    });
+
+    $('.btn-active').click(function() {
+        $(this).toggleClass('active');
+    });
+
+    $('.search-result ul li').click(function() {
+        $(this).toggleClass('active');
     });
 
 });

@@ -145,6 +145,12 @@
     }
 }
 
+@media (min-width:992px) {
+    .main-item h2 {
+        font-size: 2.5rem;
+    }
+}
+
 /* **************************************** *
  * 작업정보구성도
  * **************************************** */
@@ -554,7 +560,10 @@
 
 @media (min-width:992px) {
     .map .i-compass {
-        bottom: 140px;
+        bottom: auto;
+        top: 32px;
+        left: 32px;
+        right: auto;
     }
 
     .map .zoom {
@@ -765,6 +774,7 @@
 .btn-group.vertical button {
     padding: 14px 0;
 }
+
 .btn-group button {
     font-size: 15px;
     font-weight: 500;
@@ -788,4 +798,25 @@
         font-size: 16px;
         height: 52px;
     }
+}
+
+.search-result {
+    margin: 20px 0 0 0;
+}
+
+.search-result ul {
+    border-top: 1px solid var(--black-500);
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result ul li {
+    border-bottom: 1px solid var(--black-300);
+    color: var(--black-900);
+    padding: 12px;
+    text-align: left;
+}
+
+.search-result ul li.active {
+    background: var(--bg-rgb);
 }

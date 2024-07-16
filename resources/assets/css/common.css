@@ -699,6 +699,7 @@ main .container {
 .btn-primary {
     background: var(--primary);
     color: var(--white);
+    font-size: 16px;
 }
 
 .btn-red {
@@ -708,11 +709,32 @@ main .container {
     font-weight: 600;
 }
 
-.btn-yellow {
-    background: #FFC702;
-    color: var(--white);
+.btn-active {
+    background: var(--white);
+    border: 1px solid var(--black-100);
+    color: var(--black-700);
     font-size: 16px;
     font-weight: 600;
+}
+
+.btn-active:active,
+.btn-active.active {
+    background: var(--red);
+    color: var(--white);
+}
+
+.btn-yellow {
+    background: var(--white);
+    border: 1px solid var(--black-100);
+    color: var(--black-700);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-yellow:active,
+.btn-yellow.active {
+    background: #FFC702;
+    color: var(--white);
 }
 
 .btn-outline-gray {
@@ -730,8 +752,6 @@ main .container {
 
 @media (min-width:768px) {
     .btn-red {
-        background: var(--red);
-        color: var(--white);
         font-size: 20px;
         font-weight: 600;
     }
@@ -879,6 +899,7 @@ main .container {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .select-group label {
@@ -976,6 +997,10 @@ main .container {
     width: 100%;
 }
 
+.input-wrap.horizontal {
+    flex-direction: row;
+}
+
 .input-group {
     align-items: flex-start;
     display: flex;
@@ -1010,6 +1035,12 @@ input::placeholder {
 @media (min-width:768px) {
     .input-wrap {
         gap: 2rem;
+    }
+
+    .input-area {
+        display: flex;
+        gap: .5rem;
+        width: 100%;
     }
 
     .input-group {
@@ -1158,7 +1189,7 @@ input::placeholder {
 
 @media (min-width:992px) {
     .card {
-        padding: 3rem 3.5rem;
+        padding: 2rem 2.5rem;
     }
 }
 
