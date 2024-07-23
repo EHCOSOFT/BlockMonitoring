@@ -156,7 +156,21 @@
  * **************************************** */
 .main-content h1 {
     margin: 0 0 20px 0;
+    position: relative;
     text-align: center;
+}
+
+.main-content h1 .btn-back {
+    background: url(../img/ico/i-arrow-left.png);
+    background-size: cover;
+    border: 0;
+    height: 32px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
 }
 
 .main-content button {
@@ -381,7 +395,7 @@
 
 .map .i-compass {
     background: url(../img/ico/i-compass.png);
-    bottom: 180px;
+    bottom: 250px;
     height: 34px;
     position: absolute;
     right: 12px;
@@ -391,7 +405,7 @@
 
 .map .zoom {
     align-items: center;
-    bottom: 96px;
+    bottom: 170px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
@@ -442,8 +456,23 @@
     width: 100%;
 }
 
+.map-area .btn-back {
+    background: url(../img/ico/i-arrow-left.png);
+    background-size: cover;
+    border: 0;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    left: 12px;
+    top: 23px;
+    transform: translateY(-50%);
+    width: 24px;
+    z-index: 99;
+}
+
 .map .list {
     align-items: center;
+    bottom: 80px;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2px);
@@ -486,22 +515,40 @@
     position: absolute;
 }
 
+.map .list .red {
+    background: var(--red);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 13px;
+    padding: 8px 4px;
+    text-align: center;
+}
+
+.map .list .blue {
+    background: var(--primary);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 13px;
+    padding: 16px 4px;
+    text-align: center;
+}
+
 @media (min-width:768px) {
     .map {
         height: calc(100vh - 80px);
-        padding: 32px;
+        padding: 24px;
     }
 
     .map .i-compass {
-        bottom: 250px;
+        bottom: 340px;
         height: 44px;
         width: 44px;
-        right: 32px;
+        right: 24px;
     }
 
     .map .zoom {
-        bottom: 140px;
-        right: 32px;
+        bottom: 236px;
+        right: 24px;
     }
 
     .zoom .i-plus {
@@ -517,6 +564,7 @@
     }
 
     .map .list {
+        bottom: 102px;
         padding: 16px;
     }
 
@@ -563,7 +611,9 @@
         bottom: auto;
         top: 32px;
         left: 32px;
+        height: 60px;
         right: auto;
+        width: 60px;
     }
 
     .map .zoom {
@@ -577,7 +627,8 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.00);
     max-width: 360px;
     position: absolute;
-    top: 80px;
+    top: 0px;
+    right: 0;
     width: 100%;
 }
 
@@ -680,8 +731,16 @@
 }
 
 @media (min-width:768px) {
+    .map-area .btn-back {
+        height: 32px;
+        left: 0;
+        top: 20px;
+        width: 32px;
+    }
+
     .map .day {
-        top: 110px;
+        top: 0px;
+        right: 0;
     }
 
     .day-header {
@@ -749,10 +808,23 @@
 @media (min-width:992px) {
     .map-area {
         margin: 0 auto;
-        max-width: 1000px;
+        max-width: 800px;
+    }
+
+    .map-area .btn-back {
+        display: none;
+    }
+
+    .map .day {
+        left: 0;
     }
 }
 
+@media (min-width:1200px) {
+    .map-area {
+        max-width: 1000px;
+    }
+}
 /* **************************************** *
  * 데이터확인 구성도
  * **************************************** */

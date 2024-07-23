@@ -1001,6 +1001,12 @@ main .container {
     flex-direction: row;
 }
 
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .input-group {
     align-items: flex-start;
     display: flex;
