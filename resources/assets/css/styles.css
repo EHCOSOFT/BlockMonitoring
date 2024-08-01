@@ -450,6 +450,14 @@
     padding: 0;
 }
 
+.map-wrap {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
 .map-area {
     height: 100%;
     position: relative;
@@ -825,6 +833,7 @@
         max-width: 1000px;
     }
 }
+
 /* **************************************** *
  * 데이터확인 구성도
  * **************************************** */
