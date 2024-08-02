@@ -53,6 +53,10 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+    $('.btn-outline-gray').click(function() {
+        $(this).toggleClass('active');
+    });
+
     $('.search-result ul li').click(function() {
         $(this).toggleClass('active');
     });

@@ -832,6 +832,8 @@
     }
 
     .map .day {
+        right: 50%;
+        transform: translateX(50%);
     }
 }
 

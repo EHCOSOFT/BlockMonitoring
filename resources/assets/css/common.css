@@ -743,6 +743,11 @@ main .container {
     color: var(--black-700);
 }
 
+.btn-outline-gray.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
 .btn-outline-gray:focus,
 .btn-outline-gray:active {
     border-color: var(--primary);
