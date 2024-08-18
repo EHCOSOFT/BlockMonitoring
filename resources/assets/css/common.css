@@ -737,6 +737,11 @@ main .container {
     color: var(--white);
 }
 
+.btn-tag {
+    background: #FFC702 !important;
+    color: var(--white) !important;
+}
+
 .btn-outline-gray {
     background: var(--white);
     border: 1px solid var(--black-100);
@@ -813,6 +818,12 @@ main .container {
     width: 3.75rem;
 }
 
+.icon-06 {
+    background: url(../img/ico/icon-06.png);
+    height: 3.75rem;
+    width: 3.75rem;
+}
+
 @media (min-width:48rem) {
     .icon-01 {
         height: 6.125rem;
@@ -835,6 +846,11 @@ main .container {
     }
 
     .icon-05 {
+        height: 6.125rem;
+        width: 6.125rem;
+    }
+
+    .icon-06 {
         height: 6.125rem;
         width: 6.125rem;
     }
@@ -1020,8 +1036,18 @@ main .container {
 }
 
 .input-group label {
+    align-items: center;
     color: var(--black-900);
+    display: flex;
     font-size: var(--text-lg);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-group label a {
+    color: var(--red);
+    font-size: 14px;
+    text-decoration: underline;
 }
 
 .input-group input {
@@ -1062,6 +1088,10 @@ input::placeholder {
         font-size: 1.5rem;
     }
 
+    .input-group label a {
+        font-size: 20px;
+    }
+
     .input-group input {
         border-radius: 0.75rem;
         padding: 1.25rem;
@@ -1079,6 +1109,10 @@ input::placeholder {
 
     .input-group label {
         font-size: 1.25rem;
+    }
+
+    .input-group label a {
+        font-size: 16px;
     }
 
     .input-group input {
@@ -1334,8 +1368,18 @@ input::placeholder {
     min-width: 90%;
 }
 
+.account-modal .modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
 .account-modal button {
     font-size: 16px;
+}
+
+.logout-modal .modal-header {
+    margin: 0;
 }
 
 @media (min-width:768px) {
@@ -1358,6 +1402,10 @@ input::placeholder {
     .account-modal .modal-footer button {
         font-size: 20px;
         height: 3.25rem;
+    }
+
+    .logout-modal .modal-body {
+        padding: 20px 0;
     }
 }
 
