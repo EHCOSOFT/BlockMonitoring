@@ -1250,6 +1250,25 @@ input::placeholder {
     align-items: center;
     display: flex;
     gap: 8px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-header h3 div {
+    display: inline-block;
+    height: 24px;
+    text-align: justify;
+    position: relative;
+    width: 120px;
+}
+
+.card-header h3 div::after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    width: 100px;
+    z-index: 1;
 }
 
 .card-body {

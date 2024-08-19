@@ -23,7 +23,8 @@
                 <section class="main-content">
                     <h1>
                         <button type="button" class="btn-back" onclick="history.back();"></button>
-                        3. 센서연결</h1>
+                        3. 센서연결
+                    </h1>
                     <div class="card">
                         <div class="row">
                             <div class="col-12 col-md-6">
@@ -44,7 +45,7 @@
                         <div class="card-wrap">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>GPS<span class="switch-circle on"></span></h3>
+                                    <h3><div>G P S</div><span class="switch-circle on"></span></h3>
 
                                 </div>
                                 <div class="card-body">
@@ -53,7 +54,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>IMU<span class="switch-circle off"></span></h3>
+                                    <h3><div>I M U</div><span class="switch-circle off"></span></h3>
 
                                 </div>
                                 <div class="card-body">
@@ -63,8 +64,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>풍향풍속<span class="switch-circle off"></span></h3>
-
+                                    <h3><div>풍 향 풍 속</div><span class="switch-circle off"></span></h3>
                                 </div>
                                 <div class="card-body">
                                     <p>2024-06-04 14:25:30, 270, 5.5<br>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>서버<span class="switch-circle on"></span></h3>
+                                    <h3><div>서  버</div><span class="switch-circle on"></span></h3>
 
                                 </div>
                                 <div class="card-body">
@@ -83,7 +83,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>통신<span class="switch-circle off"></span></h3>
+                                    <h3><div>통  신</div><span class="switch-circle off"></span></h3>
                                 </div>
                                 <div class="card-body">
                                     <p>2024-06-04 14:31:00, Client1, CONNECTED<br>
@@ -92,13 +92,16 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>시스템온도<span class="switch-circle off"></span></h3>
+                                    <h3><div>시 스 템 온 도</div><span class="switch-circle off"></span></h3>
                                 </div>
                                 <div class="card-body">
                                     <p>45, 49, 35, 32, 33, 34, 30
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-md btn-primary">재부팅</button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-md btn-primary">재부팅</button>
+                                <button type="button" class="btn btn-md btn-primary">제로세팅</button>
+                            </div>
                         </div>
                     </div>
                     <div class="pc-sensor">
@@ -106,7 +109,7 @@
                         <div class="card">
                             <table class="table-style">
                                 <colgroup>
-                                    <col style="width: 200px;">
+                                    <col style="width: 300px;">
                                     <col style="width: auto;">
                                 </colgroup>
                                 <thead>
@@ -118,7 +121,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <h3>GPS<span class="switch-circle on"></span></h3>
+                                            <h3><b>G P S</b><span class="switch-circle on"></span></h3>
                                         </td>
                                         <td class="text-left">
                                             $GPGGA,114455.532,3735.0079,N,12701.6446,E,1,03,7.9,48.8,M,19.6,M,0.0,0000*48
@@ -127,7 +130,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <h3>IMU<span class="switch-circle on"></span></h3>
+                                            <h3><b>I M U</b><span class="switch-circle on"></span></h3>
                                         </td>
                                         <td class="text-left">
                                             2023-06-04 12:34:56.789, 0.02, -0.01, 9.81, 0.001, -0.002, 0.0005, 0.3,
@@ -138,7 +141,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <h3>풍향풍속<span class="switch-circle on"></span></h3>
+                                            <h3><b>풍 향 풍 속</b><span class="switch-circle on"></span></h3>
                                         </td>
                                         <td class="text-left">
                                             2024-06-04 14:25:30, 270, 5.5<br>
@@ -148,7 +151,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <h3>서버<span class="switch-circle on"></span></h3>
+                                            <h3><b>서 버</b><span class="switch-circle on"></span></h3>
                                         </td>
                                         <td class="text-left">
                                             2024-06-04 14:25:30, 270, 5.5<br>
@@ -158,7 +161,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <h3>통신<span class="switch-circle off"></span></h3>
+                                            <h3><b>통 신</b><span class="switch-circle off"></span></h3>
                                         </td>
                                         <td class="text-left">
                                             2024-06-04 14:31:00, Client1, CONNECTED<br>
@@ -168,7 +171,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <h3>블록장비온도<span class="switch-circle off"></span></h3>
+                                            <h3><b>블 록 장 비 온 도</b><span class="switch-circle off"></span></h3>
                                         </td>
                                         <td class="text-left">
                                             45, 49, 35, 32, 33, 34, 30
