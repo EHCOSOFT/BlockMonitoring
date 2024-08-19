@@ -389,8 +389,10 @@
     display: inline-block;
     height: 1px;
     position: relative;
-    width: 100px;
+    top: -30px;
+    width: 200px;
 }
+
 .pc-sensor button {
     margin: 28px 0 0 0;
 }

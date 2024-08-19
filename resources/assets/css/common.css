@@ -697,7 +697,7 @@ main .container {
 }
 
 .btn-primary {
-    background: var(--primary);
+    background: var(--primary) !important;
     color: var(--white);
     font-size: 16px;
 }
@@ -880,6 +880,11 @@ main .container {
     width: 14px;
 }
 
+.i-trg-right {
+    background: url(../img/ico/i-trg-right.png);
+    height: 14px;
+    width: 14px;
+}
 /* **************************************** *
  * input
  * **************************************** */
