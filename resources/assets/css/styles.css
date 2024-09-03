@@ -567,7 +567,7 @@
     text-align: center;
 }
 
-@media (min-width:768px) {
+@media all and (orientation: portrait) and (min-width:768px) {
     .map {
         height: calc(100vh - 80px);
         padding: 24px;
@@ -600,7 +600,6 @@
     .map .list {
         bottom: 160px;
         padding: 16px;
-        max-width: 1000px;
         width: calc(100% - 48px);
     }
 
@@ -647,17 +646,63 @@
 }
 
 @media (min-width:992px) {
+    .map .day {
+        max-width: 360px;
+        top: 24px;
+    }
+
     .map .i-compass {
         bottom: auto;
-        top: 32px;
+        top: 80px;
         left: 32px;
-        height: 120px;
+        height: 100px;
         right: auto;
-        width: 120px;
+        width: 100px;
     }
 
     .map .zoom {
         bottom: 32px;
+    }
+}
+
+@media (min-width:1100px) {
+    .map .list {
+        bottom: 160px;
+        padding: 16px;
+        margin: 0 auto;
+        max-width: 1000px;
+        width: calc(100% - 48px);
+    }
+
+    .map .list dl dd i {
+        height: 24px;
+        width: 24px;
+    }
+
+    .map .list dl dt {
+        font-size: 18px;
+    }
+
+    .map .list dl dd {
+        font-size: 20px;
+    }
+
+    .map .list .red {
+        background: var(--red);
+        border-radius: 8px;
+        color: var(--white);
+        font-size: 18px;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .map .list .blue {
+        background: var(--primary);
+        border-radius: 8px;
+        color: var(--white);
+        font-size: 18px;
+        padding: 16px 0;
+        text-align: center;
     }
 }
 
@@ -770,7 +815,7 @@
     min-width: 90%;
 }
 
-@media (min-width:768px) {
+@media all and (orientation: portrait) and (min-width:768px) {
     .map-area .btn-back {
         height: 32px;
         left: 24px;
@@ -846,10 +891,11 @@
     }
 }
 
-@media (min-width:992px) {
+@media all and (orientation: portrait) and (min-width:992px) {
     .map-area {
         margin: 0 auto;
         max-width: 800px;
+        position: relative;
     }
 
     .map-area .btn-back {
@@ -860,11 +906,48 @@
         right: 50%;
         transform: translateX(50%);
     }
+
+    .map .i-compass {
+        height: 100px;
+        width: 100px;
+    }
 }
 
 @media (min-width:1200px) {
     .map-area {
+        margin: 0 auto;
         max-width: 1000px;
+    }
+}
+
+@media all and (orientation: landscape) and (max-width: 900px) {
+    .map .list {
+        bottom: 12px;
+        width: calc(50% - 16px);
+    }
+
+    .map .list .red {
+        font-size: 12px;
+    }
+
+    .map .list .blue {
+        font-size: 12px;
+    }
+
+    .map .list dl dt {
+        font-size: 10px;
+    }
+
+    .map .zoom {
+        bottom: 100px;
+    }
+
+    .map .i-compass {
+        bottom: 180px;
+    }
+
+    .map .list.bottom {
+        right: 12px;
     }
 }
 
