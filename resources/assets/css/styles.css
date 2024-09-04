@@ -45,6 +45,17 @@
     font-size: var(--text-lg);
 }
 
+@media all and (orientation: landscape) and (max-width:992px) {
+    .login-wrap {
+        height: 100%;
+        padding: 80px 0;
+    }
+
+    .login-wrap .sumsung-logo {
+        bottom: 12px;
+    }
+}
+
 @media (min-width:768px) {
     .login-wrap {
         gap: 2.75rem;
@@ -920,7 +931,12 @@
     }
 }
 
-@media all and (orientation: landscape) and (max-width: 900px) {
+@media all and (orientation: landscape) and (max-width: 992px) {
+    .map .day {
+        left: 12px;
+        width: 400px;
+    }
+
     .map .list {
         bottom: 12px;
         width: calc(50% - 16px);
@@ -977,7 +993,7 @@
     font-size: 15px;
     font-weight: 500;
     flex: 1;
-    height: 50px;
+    height: 44px;
 }
 
 @media (min-width:768px) {

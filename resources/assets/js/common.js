@@ -17,6 +17,11 @@ $(document).ready(function () {
         `
     };
 
+    // 모바일/태블릿에서 스크롤을 방지하는 함수
+    function preventScroll(event) {
+        event.preventDefault();
+    }
+
     // 모달 열기 버튼 클릭 이벤트
     $(".open-modal").click(function () {
         var modalId = $(this).data("modal-id");
@@ -45,19 +50,19 @@ $(document).ready(function () {
         });
     });
 
-    $('.btn-yellow').click(function() {
+    $('.btn-yellow').click(function () {
         $(this).toggleClass('active');
     });
 
-    $('.btn-active').click(function() {
+    $('.btn-active').click(function () {
         $(this).toggleClass('active');
     });
 
-    $('.btn-outline-gray').click(function() {
+    $('.btn-outline-gray').click(function () {
         $(this).toggleClass('active');
     });
 
-    $('.search-result ul li').click(function() {
+    $('.search-result ul li').click(function () {
         $(this).toggleClass('active');
     });
 

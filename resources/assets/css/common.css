@@ -573,6 +573,16 @@ h2 {
     max-width: 1856px;
 }
 
+@media all and (orientation: landscape) and (max-width:992px) {
+    .header {
+        height: 48px;
+    }
+
+    .header .container {
+        height: 48px;
+    }
+}
+
 .header a {
     align-items: center;
     display: flex;
@@ -649,6 +659,13 @@ h2 {
     flex-direction: column;
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
+}
+
+@media all and (orientation: landscape) and (max-width:992px) {
+    .wrap {
+        overflow-y: scroll;
+        height: 100%;
+    }
 }
 
 main {
@@ -885,6 +902,7 @@ main .container {
     height: 14px;
     width: 14px;
 }
+
 /* **************************************** *
  * input
  * **************************************** */
@@ -1367,7 +1385,25 @@ input::placeholder {
 .modal-body {
     overflow: scroll;
     max-height: calc(100vh - 400px);
-    padding: 0 4px 0 0;
+    padding: 0 4px 20px 0;
+}
+
+@media all and (orientation: landscape) and (max-width:992px) {
+
+    .modal-content {
+        padding: 20px;
+    }
+
+    .modal-header {
+        margin: 0 0 16px 0;
+    }
+
+    .modal-body {
+        overflow: scroll;
+        max-height: calc(100vh - 200px);
+        padding: 0 4px 0 0;
+    }
+
 }
 
 .modal-body::-webkit-scrollbar {
