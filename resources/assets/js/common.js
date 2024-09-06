@@ -17,17 +17,23 @@ $(document).ready(function () {
         `
     };
 
-    // 모바일/태블릿에서 스크롤을 방지하는 함수
-    function preventScroll(event) {
-        event.preventDefault();
-    }
+    // function adjustModalHeight() {
+    //     // Get the current viewport height
+    //     let viewportHeight = window.innerHeight;
+        
+    //     // Apply the viewport height to the modal or wrapper directly
+    //     document.documentElement.style.setProperty('--real-vh', `${viewportHeight}px`);
+    //     $(".modal").css("height", viewportHeight + "px");
+    // }
 
     // 모달 열기 버튼 클릭 이벤트
     $(".open-modal").click(function () {
+        adjustModalHeight();
         var modalId = $(this).data("modal-id");
         $("#" + modalId).addClass("active");
         $("body").css("overflow", "hidden");
         // window.addEventListener("wheel", removeDefaultEvent, { passive: false });
+        window.addEventListener('touchmove', preventBodyScroll, { passive: false });
     });
 
     // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
