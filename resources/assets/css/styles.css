@@ -48,7 +48,7 @@
 @media all and (orientation: landscape) and (max-width:992px) {
     .login-wrap {
         height: 100%;
-        padding: 80px 0;
+        padding: 120px 0;
     }
 
     .login-wrap .sumsung-logo {
