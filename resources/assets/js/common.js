@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // 모달 열기 버튼 클릭 이벤트
     $(".open-modal").click(function () {
-        adjustModalHeight();
+        // adjustModalHeight();
         var modalId = $(this).data("modal-id");
         $("#" + modalId).addClass("active");
         $("body").css("overflow", "hidden");
