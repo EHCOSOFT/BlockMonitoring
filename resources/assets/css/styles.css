@@ -487,8 +487,9 @@
 }
 
 .map-area {
-    /* height: 100%; */
-    /* position: relative; */
+    height: 100%;
+    position: relative;
+    pointer-events: none;
     width: 100%;
 }
 
