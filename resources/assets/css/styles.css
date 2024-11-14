@@ -724,6 +724,7 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.00);
     /* max-width: 360px; */
     position: absolute;
+    pointer-events: auto;
     top: 12px;
     right: 12px;
     width: calc(100% - 24px);
@@ -934,7 +935,8 @@
 
 @media all and (orientation: landscape) and (max-width: 992px) {
     .map .day {
-        left: 12px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 400px;
     }
 
